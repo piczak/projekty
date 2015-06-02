@@ -1,0 +1,16 @@
+.dupa{
+  height:100px;
+  width:200px;
+  background-color:#dda1f4;
+  border: 3px dotted;
+  border-radius: 10px 50px 10px 50px;
+}
+.test:hover{
+  cursor:pointer;
+}
+.square{
+    height:100px;
+    width:100px;
+    border: 1px solid;
+    background-color:green;
+}

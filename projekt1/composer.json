@@ -1,0 +1,11 @@
+{
+    "require":{
+        "doctrine/orm": "*"
+    },
+
+    "autoload":{
+	"psr-0":{
+	    "Test": "lib/"
+	}
+    }
+}

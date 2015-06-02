@@ -1,0 +1,26 @@
+{% for path in js %}
+    <script type="text/javascript" src="{{ path }}"></script> 
+{% endfor %}
+
+{%for path in style %}
+    <link rel="stylesheet"  href="{{ path }}" media="screen">
+{% endfor %}
+
+
+
+<div class="container">
+    <div class="panel panel-default">
+	<div class="panel-body">
+	    <div class="page-header">	      
+		<div class="test" id="test1">
+		    <br>dupa {{ file1 }}
+		</div>
+		<div class='square' id='square'></div>
+		    {%for a in file1 %}
+			<br>{{ a }}
+		    {% endfor %}
+		</div>    
+	    <div class='dupa square'></div>    
+	</div>
+    </div>
+</div>

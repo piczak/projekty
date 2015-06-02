@@ -1,0 +1,16 @@
+{
+    "require":{
+        "doctrine/orm": "*",
+        "twig/twig": "~1.0"
+    },
+
+    "autoload":{
+	"psr-0":{
+	    "Scripts": "lib/",
+	    "Connect": "lib/",
+	    "Entity": "lib/",
+	    "Pages": "lib/",
+	    "Twig": "lib/"
+	}
+    }
+}

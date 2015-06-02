@@ -1,0 +1,55 @@
+1 tworzymy plik composer.json a w nim:
+--------------------
+{
+    "autoload":{
+	"psr-0":{
+	    "Test": "lib/"
+	}
+    }
+}
+--------------------
+
+namespace - folder w kotrym sa pakiety.
+
+"Test" - to jest namespace
+"lib/" - to jets sciezka gdzie jest namespace
+
+
+psr-0 -standard  php, zrobione przez php.hroup. psr -autoload standard dla composera
+
+2 nastepnei tworzymy  katalog lib, a w nim katalog Test
+lib - katalog zawirajacy wszytsko.
+
+3 w katalogu Test tworzymy nowy plik Print.php
+
+4 nastepnie generujemy pliki autoload. w termianlu wchodzimy w miejsce gdzie znajduje sie poprzednio utworzony plik composer.json i  wpisujemy  composer update
+
+5 nastepnie w katalogu w ktorym jest plik composer.json, tworzymy plik index.php
+
+w pliku index php wpisujemy
+
+<?php
+  require_once __DIR__ . 'vendor/autoload.php';
+  
+
+6 w uprzednio utworzonym pliku Print.php robimy podstawowa klase itd
+
+
+
+
+------------------------------------------------------------
+dodatkowe info
+
+dodaje Doctrine
+composer.json
+{
+    "require":{
+        "doctrine/orm": "*"
+    }
+}
+
+
+
+
+
+
