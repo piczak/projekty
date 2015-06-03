@@ -15,7 +15,5 @@ class Settings{
 	);
 	return $dbData;
     }
-    function js(){
-	
-    }
+
 }

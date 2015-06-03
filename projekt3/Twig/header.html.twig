@@ -1,0 +1,16 @@
+{% block header %}
+<!DOCTYPE html>
+<head>
+<meta http-equiv="Content-type" content="text/html; charset=iso-8859-2" />
+<meta http-equiv="Content-Language" content="pl" />
+<meta name="Author" content="{{ author }}" />
+<title>{{ title }}</title>
+{% for path in js %}
+    <script type="text/javascript" src="{{ path }}"></script> 
+{% endfor %}
+
+{%for path in style %}
+    <link rel="stylesheet"  href="{{ path }}" media="screen">
+{% endfor %}
+</head>
+{% endblock %}
