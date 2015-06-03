@@ -11,7 +11,6 @@ use Settings\Settings;
  
 $dbData = new Settings();
 
-$x = $dbData->dbData();
  
 class DBConnection{
 
