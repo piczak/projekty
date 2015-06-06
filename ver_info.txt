@@ -1,0 +1,8 @@
+v1.2
+ZMIANY DLA "projekt3"
+
+- Przyciski menu nawigacji lacza sie z plikami twig, (nazwy plikow twig nie moga posiadac duzych liter i polskich znakow).
+
+- tworzenie nowego przycisku menu nawigacji poprzez dodanie jego nazyw do tablicy w pliku /Settings/NavBar.php oraz
+    stwrzenie plkiu Twig/nazwa_przycisku_w_tablicy.html.twig, nazwa pliku nie moze zawierac wilekich liter oraz polskich znakow.
+
