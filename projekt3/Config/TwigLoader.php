@@ -16,11 +16,13 @@ class TwigLoader{
     //cala zawartosc strony
     public function page($mainDir){
 	
+	$navBar = $mainDir.'/Settings/NavBar.php';
 	$Header = $mainDir.'/Settings/Header.php';
     	$dir = $mainDir.'/Twig';
+
     	
 	$head = self::head($Header, $dir);
-	$body = self::body($dir);
+	$body = self::body($navBar, $dir);
 	/*
 	$loader = new Twig_Loader_Filesystem($dir);
 	$twig = new Twig_Environment($loader);
@@ -45,12 +47,14 @@ class TwigLoader{
     }
     
     //cialo
-    public function body($dir){
+    public function body($navBar, $dir){
 
 	$loader = new Twig_Loader_Filesystem($dir);
 	$twig = new Twig_Environment($loader);
 	
-	$body = $twig->render('body.html.twig', array());
+	require_once($navBar);
+	
+	$body = $twig->render('body.html.twig', array('tabs' => $tabs));
 
 	echo $body;
     }
